@@ -1,20 +1,42 @@
 aid: kira-systems
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kira-systems.png
 name: Kira Systems
-description: Kira Systems is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Kira Systems is a machine-learning contract analysis and review platform for law firms and
+  corporate legal teams, automatically extracting clauses, concepts, and data points from contracts during
+  M&A due diligence, real estate, banking, and other transactional work. Founded in Toronto and backed by
+  Insight Partners, Kira was acquired by Litera in 2021 and is now offered as Litera Kira. It integrates
+  with HighQ and Intralinks data rooms and Litera Transact, and exposes an Open API for additional customer
+  integration needs; no public developer portal or OpenAPI specification is currently published.
 url: https://raw.githubusercontent.com/api-evangelist/kira-systems/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
+x-acquired-by: litera
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Legal Tech
+- Contract Analysis
+- Machine Learning
+- Artificial Intelligence
+- Document Automation
+- Due Diligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kira-systems-domain-security.yml
+- type: Support
+  url: https://support.litera.com/
 - type: Website
   url: https://www.kirasystems.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
